@@ -1,5 +1,7 @@
 const Chess = require("./src/classes/chess");
 
 const chess = new Chess();
-console.log(chess);
+
+chess.setBoard();
 chess.printBoard();
+console.log(chess);

@@ -3,7 +3,7 @@ const Peça = require("../classes/pieces");
 
 const chess = new Chess;
 
-function createPieces(piece, qntd) {
+function fCreatePieces(piece, qntd) {
     const pieces = [];
 
     for (let i = 1; i <= qntd; i++) {
@@ -14,7 +14,7 @@ function createPieces(piece, qntd) {
     return pieces;
 }
 
-function createAllPieces(){
+function fCreateAllPieces(){
 
     const pieces = [];
     pieces.push(createPieces('King',1));
@@ -28,5 +28,4 @@ function createAllPieces(){
 };
 
 
-const pieces = createAllPieces();
-console.log(pieces);
+export default { fCreatePieces, fCreateAllPieces };
